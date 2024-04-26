@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './App.css';
-import Logo from './assets/logo.svg'; // Import your logo image file
+import Logo from './assets/logo.png'; // Import your logo image file
 
 const App: React.FC = () => {
   return (
