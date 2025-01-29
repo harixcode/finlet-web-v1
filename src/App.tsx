@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <header className="App-header">
         <img src={Logo} className="App-logo" alt="Finlet Logo" />
         <h1>Welcome to Finlet</h1>
-        <p>Your go-to platform for financial services.</p>
+        <p>Passion project by <a  href="https://github.com/harixcode" >harixcode</a> </p>
       </header>
     </div>
   );
