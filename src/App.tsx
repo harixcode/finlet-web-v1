@@ -2,17 +2,30 @@
 
 import React from 'react';
 import './App.css';
-import Logo from './assets/logo.png'; // Import your logo image file
-
+import PercentageCalculator from './components/percentage/percentage_calculator.tsx';
+import { AppBar, Box } from '@mui/material';
+import ResponsiveAppBar from './components/header/Appbar.tsx';
+import Footer from './components/footer/footer.tsx';
+import PercentageChangeCalculator from './components/percentage/percentage_change.tsx';
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={Logo} className="App-logo" alt="Finlet Logo" />
-        <h1>Welcome to Finlet</h1>
-        <p>Passion project by <a  href="https://github.com/harixcode" >harixcode</a> </p>
-      </header>
+    <div>
+      <ResponsiveAppBar/>
+      <section className="new-section"><PercentageCalculator /></section>
+      <section className="new-section">
+        <PercentageChangeCalculator /></section>
+      
+      {/* Footer */}
+      <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            minHeight: '100vh',
+          }}> 
+        <Footer/>
+      </Box>
     </div>
+    
   );
 }
 

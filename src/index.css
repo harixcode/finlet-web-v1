@@ -26,3 +26,8 @@ code {
   height: auto;
   margin-bottom: 20px;
 }
+.new-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
