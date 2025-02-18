@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="#home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
-              textDecoration: 'none',
+              textDecoration: 'none'
             }}
           >
             FINLET.IO

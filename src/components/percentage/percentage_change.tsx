@@ -28,7 +28,7 @@ const PercentageChangeCalculator = () => {
         bgcolor: "background.paper",
         boxShadow: 3,
         borderRadius: 2,
-        maxWidth: 1000,
+        maxWidth: 500,
         mx: "auto",
         textAlign: "center",
       }}
@@ -36,7 +36,7 @@ const PercentageChangeCalculator = () => {
       {/* <Typography variant="h6" gutterBottom>
         Percentage Change Calculator
       </Typography> */}
-      <Box sx={{ display: "flex", alignItems: "center",gap: 1 }}>
+      <Box sx={{ display: "flex", alignItems: "center",gap: 1, }}>
         <Typography>What is the percentage increase/decrease from</Typography>
         <TextField
           type="number"
