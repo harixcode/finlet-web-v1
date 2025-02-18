@@ -27,7 +27,7 @@ const PercentageCalculator = () => {
       <Typography variant="h6" gutterBottom>
         Percentage Calculator
       </Typography>
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, paddingTop:5,width: 500 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1, paddingTop:5}}>
       <Typography>What is </Typography>
         <TextField
           type="number"
@@ -36,7 +36,7 @@ const PercentageCalculator = () => {
           size="small"
           value={percentage}
           onChange={(e) => setPercentage(e.target.value)}
-          sx={{ width: 120 }}
+          sx={{ width: '20%' }}
         />
         <Typography>% of</Typography>
         <TextField
@@ -46,14 +46,14 @@ const PercentageCalculator = () => {
           size="small"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
-          sx={{ width: 120 }}
+          sx={{ width: '20%' }}
         />
         <Typography>=</Typography>
-        <Typography variant="h6" color="primary">
+        <Typography variant="h6" color="primary" display="flex">
           {result1 || "?"}
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, paddingTop:5, width: 500 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1, paddingTop:5}}>
         {/* Value to Percentage */}
         <TextField
           type="number"
@@ -62,7 +62,7 @@ const PercentageCalculator = () => {
           size="small"
           value={value1}
           onChange={(e) => setValue1(e.target.value)}
-          sx={{ width: 120 }}
+          sx={{ width: '20%' }}
         />
         <Typography>is what percentage of</Typography>
         <TextField
@@ -72,10 +72,10 @@ const PercentageCalculator = () => {
           size="small"
           value={number2}
           onChange={(e) => setNumber2(e.target.value)}
-          sx={{ width: 120 }}
+          sx={{ width: '20%' }}
         />
         <Typography>=</Typography>
-        <Typography variant="h6" color="primary">
+        <Typography variant="h6" color="primary" display="flex">
           {result2+ "%"|| "?"}
         </Typography>
       </Box>
