@@ -36,7 +36,7 @@ const PercentageChangeCalculator = () => {
       {/* <Typography variant="h6" gutterBottom>
         Percentage Change Calculator
       </Typography> */}
-      <Box sx={{ display: "flex", alignItems: "center",gap: 1, }}>
+      <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, alignItems: "center",gap: 1, }}>
         <Typography>What is the percentage increase/decrease from</Typography>
         <TextField
           type="number"
@@ -45,6 +45,7 @@ const PercentageChangeCalculator = () => {
           size="small"
           value={initialValue}
           onChange={(e) => setInitialValue(e.target.value)}
+          sx={{ width: { xs: '100%', sm: 'auto' } }}
         />
         <Typography> to </Typography>
         <TextField
@@ -54,6 +55,7 @@ const PercentageChangeCalculator = () => {
           size="small"
           value={finalValue}
           onChange={(e) => setFinalValue(e.target.value)}
+          sx={{ width: { xs: '100%', sm: 'auto' } }}
         />
         <Typography> = </Typography>
         <Typography variant="h6" color={isIncrease ? "green" : isDecrease ? "red" : "text.primary"}>

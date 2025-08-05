@@ -3,24 +3,27 @@
 import React from 'react';
 import './App.css';
 import PercentageCalculator from './components/percentage/percentage_calculator.tsx';
-import { AppBar, Box } from '@mui/material';
+import { AppBar, Box, Container } from '@mui/material';
 import ResponsiveAppBar from './components/header/Appbar.tsx';
 import Footer from './components/footer/footer.tsx';
 import PercentageChangeCalculator from './components/percentage/percentage_change.tsx';
 const App: React.FC = () => {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <ResponsiveAppBar/>
-      <section className="new-section"><PercentageCalculator /></section>
-      <section className="new-section">
-        <PercentageChangeCalculator /></section>
+      <Container sx={{ mt: 4, flex: 1 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+          <PercentageCalculator />
+          <PercentageChangeCalculator />
+        </Box>
+      </Container>
       
       {/* Footer */}
       <Box
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            minHeight: '100vh',
+            py: 2,
+            px: 3,
+            mt: "auto",
           }}> 
         <Footer/>
       </Box>
